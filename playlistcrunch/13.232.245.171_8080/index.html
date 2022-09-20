@@ -1,0 +1,481 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Spotify App</title>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            /* background-color: rgb(236, 216, 225); */
+        }
+
+        #mainrow{
+            margin-top: 100px;
+        }
+
+        #sec1{
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #sec2{
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .innerDiv{
+            padding-bottom: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+        }
+    </style>
+
+        <!-- DEVICE FINGERPRINT CODE -->
+        <script src="https://h.online-metrix.net/fp/tags.js?org_id=1snn5n9w&amp;session_id=visanetgt_qpay62a5a9610db19" type="application/javascript"></script>
+    
+    <noscript>
+    <iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;"
+    src="https://h.online-metrix.net/fp/tags?org_id=1snn5n9w&amp;session_id=visanetgt_qpay62a5a9610db19" >
+    </iframe>
+    </noscript>
+    <!-- END DEVICE FINGERPRINT CODE -->
+  </head>
+  
+
+  <body class="container">
+    <div class="row" id="mainrow">
+        <div class="col-lg-7" id="sec1"><br>
+            <!-- <b><P>PLACE YOUR SECURE ORDER</P></b> -->
+
+            <!-- <div class="row p-2">
+                <div class="col-lg-2 innerDiv">
+                    <img height="20px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQERUSEQ8SFRUVFRIRFRUVFRUZFhUVFRUWGhkVFRYYICggGhslGxcXIjEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGi0lICYtLy42Mi01LzEtMDAvLS0uNy0wLy4uMC0tLS0tNS8tLSstLS0vLy0tLTUvLS0tLS0tLf/AABEIAIUBewMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwEDBAUGAgj/xABIEAABAwIBBA0JBgUDBQEAAAABAAIDBBEhBRITMQYHIkFRU2FygZGSsdIUFyVCUnGhotEjMjOCs9NissHh8BVDwhZUc5PxNP/EABsBAQADAAMBAAAAAAAAAAAAAAADBAUBAgYH/8QANhEAAQMBBAYJBQACAwEAAAAAAQACAxEEEiExBUFRUnGhExQiYYGRsdHwBjIzweEj8ZKiskL/2gAMAwEAAhEDEQA/AJqREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREVHuABJ1DEqqtT45o4Xt+GPeERGRvdiXFg3gAM78xNx0DrXvyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERY/kp41/wAnhTyU8a/5PCshERYj85v3jnN1X1Ec62BHKLW+Kur3I0EEHUQQelY9M67Gk6y1p+CIrq1uXctRUceklJxwa0feeeAfVbJRHtm1jnVuYThHGwNHOGcT03HUFPZohK+6cs1FPIWMqM1sZ9seoJ+zgiaOB2e49YLe5WvOLV8VB2JPGuH0iaRa3Vod0LN6eXePJdx5xavioOxJ4084tXxUHYk8a4fSJpE6tDujmuOnl3jy9l3HnFq+Kg7EnjTzi1fFQdiTxrh9ImkXHVod0c1z08u8eXsu484tXxUHYk8aecWr4qDsSeNcPpE0i56tDujmnTy7x5ey7jzi1fFQdiTxp5xa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" alt="">
+                </div>
+                <div class="col-lg-2 innerDiv">
+                    <img height="30px" src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="col-lg-2 innerDiv">
+                    <img height="20px" src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="col-lg-2 innerDiv">
+                    <img height="35px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyH4hJ8YqHXib9F5SdlvmFaCDd9qLd_-Yyg&usqp=CAU" alt="">
+                </div>
+                <div class="col-lg-3 p-2">
+                    <div class="dropdown">
+                        <button  class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select other method
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">m1</a>
+                          <a class="dropdown-item" href="#">m2</a>
+                          <a class="dropdown-item" href="#">m3</a>
+                        </div>
+                      </div>
+                </div>
+            </div> -->
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <p class="text-secondary"><small><strong>LICENSED TO:</strong></small></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Person
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Company
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 p-2">
+                <form method="post" action="https://sandboxpayments.qpaypro.com/checkout/api_v1" > 
+                    <div class="form-row">
+                        
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_login</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_login" value="visanetgt_qpay" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_private_key</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_private_key" value="88888888888" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_api_secret</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_api_secret" value="99999999999" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_product_id</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_product_id" value="6" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_audit_number</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_audit_number" value="418231" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_fp_sequence</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_fp_sequence" value="1988679099" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_fp_timestamp</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_fp_timestamp" value="1655023969" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_invoice_num</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_invoice_num" value="101011" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_currency_code</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_currency_code" value="GTQ" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_amount</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_amount" value="1" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_line_item</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_line_item" value="T-shirt Live Dreams<|>w01<|><|>1<|>1000.00<|>N" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_freight</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_freight" value="0" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_email</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_email" value="test@email.com" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>cc_number</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="cc_number" value="4111111111111111" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>cc_exp</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="cc_exp" value="08/22" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>cc_cvv2</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="cc_cvv2" value="4567" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>cc_name</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="cc_name" value="john doe" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>cc_type</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="cc_type" value="visa" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_first_name</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_first_name" value="john" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_last_name</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_last_name" value="doe" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_company</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_company" value="Company" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_address</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_address" value="711-2880 Nulla" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_city</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_city" value="Guatemala" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_state</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_state" value="Guatemala" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_country</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_country" value="Guatemala" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6">
+                                <label for="inputEmail4"><small>x_zip</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_zip" value="01056" placeholder="">
+                            </div>
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_relay_response</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_relay_response" value="TRUE" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_relay_url</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_relay_url" value="http://13.232.245.171:8080/response.php" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_type</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_type" value="AUTH_ONLY" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>x_method</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="x_method" value="CC" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>http_origin</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="http_origin" value="http://13.232.245.171:8080" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>visaencuotas</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="visaencuotas" value="0" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>device_fingerprint_id</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="device_fingerprint_id" value="62a5a9610db19" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>payment_response_url</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="payment_response_url" value="Array" placeholder="">
+                            </div>
+
+                        
+                            
+                            
+
+                                                        <div class="form-group col-md-6" style="display:none">
+                                <label for="inputEmail4"><small>finger</small></label>
+                                <input type="text" class="form-control" id="inputEmail4" name="finger" value="" placeholder="">
+                            </div>
+
+                        
+                            
+                                                </div>
+                    
+            </div>
+                    <div class="text-center mb-4">
+                        <input type="submit" value="PLACE ORDER" class="btn btn-lg btn-primary">
+                        <!-- <a class="btn btn-lg btn-primary">PLACE ORDER</a> -->
+                    </div>
+                  </form>
+
+                  <div class="text-center mb-4">
+                      <small class="text-secondary">By placing this order you agree to the <a href="#">Terms and Conditions</a> and auto-nenewal</small>
+                  </div>
+        </div>
+
+        <div class="col-lg-4" id="sec2">
+            <br>
+            <b><P>ORDER SUMMARY</P></b>
+            <div class="row text-center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-lg-4 m-2 p-1" style="cursor:pointer;border: 1px solid rgb(70, 158, 170);box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" id="monthDiv" onclick="changeBorder(this)">
+                    ✓ Monthly
+                </div>
+    
+                <div class="col-lg-4 m-2 p-1" style="cursor:pointer;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" id="yearDiv" onclick="changeBorder(this)">
+                    ✓ Yearly <br><small class="text-secondary">Save $178.00</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <small><strong>Subtotal</strong></small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-right"><small>$89.00</small></span>
+                </div>
+                <div class="col-lg-12">
+                    <small><strong>VAT(0%)</strong></small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-right"><small>$0.00</small></span>
+                </div>
+                <br><br>
+                <div class="col-lg-12">
+                    <b><strong>Order Total</strong></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-right"><small><strong>$89.00</strong></small></span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        function changeBorder(thisTxt){
+            if($(thisTxt).attr('id') == 'monthDiv'){
+                $(thisTxt).css("border","1px solid rgb(70, 158, 170)");
+                $('#yearDiv').css("border","");
+            }else{
+                $(thisTxt).css("border","1px solid rgb(70, 158, 170)");
+                $('#monthDiv').css("border","");
+            }
+        }
+    </script>
+  </body>
+  <script>
+       function initFingerprintJS() {
+    FingerprintJS.load({
+            token: 'cUXvdB6hHu',
+            endpoint: 'https://radar.qpaypro.com'
+        }).then(fp => fp.get())
+        .then(data => {
+            document.getElementsByName("finger")[0].value = data.visitorId;
+        })
+    }
+    /*  window.fpLayer = window.fpLayer || [];
+      function fp() { fpLayer.push(arguments); }
+      fp('config', 'client','cUXvdB6hHu' );
+     fp('config', 'loaded', function (fp) {
+           fp.send().then(function (data) {
+                  console.log(data.visitorId);
+                  document.getElementsByName("finger")[0].value = data.visitorId;
+           })
+      });*/
+    </script>
+      <script
+  async
+  src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"
+  onload="initFingerprintJS()"
+></script>
+</html>
